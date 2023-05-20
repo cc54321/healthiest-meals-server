@@ -1,8 +1,9 @@
-var express = require('express');
-var router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
+const express = require('express');
+const router = express.Router();
+
+// Define your root route
+router.get('/', (req, res) => {
   res.render('index', { title: 'Express' });
 });
 
